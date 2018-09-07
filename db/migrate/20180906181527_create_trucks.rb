@@ -4,7 +4,7 @@ class CreateTrucks < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :account_name
       t.string :password
-      t.string :type
+      t.string :food_type
       t.string :description
       t.string :pic
       t.string :location

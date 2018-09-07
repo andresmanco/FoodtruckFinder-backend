@@ -1,25 +1,19 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+
 Truck.destroy_all
 Dish.destroy_all
 User.destroy_all
 Review.destroy_all
 
-truck0 = Truck.create(name: 'Little Italy', account_name: 'truck0', password: 'pw', type: 'Italian', description: '', pic: 'https://roaminghunger.com/img/trucks/original/500f37ff-f4dc-416a-acd2-352f46204482.jpeg', location: '' )
-truck1 = Truck.create(name: 'Mama Dees', account_name: 'truck1', password: 'pw', type: 'Italian', description: '', pic: 'https://roaminghunger.com/img/trucks/original/5547df6c-1454-43d8-98c1-6fa246204482.jpg', location: '' )
-truck2 = Truck.create(name: 'Barra Vieja', account_name: 'truck2', password: 'pw', type: 'Mexican', description: '', pic: 'http://www.garuyo.com/sites/default/files/styles/large/public/images/2015/06/los-food-trucks-mas-famosos-de-la-ciudad-de-mexico_135982.jpg_628113176.jpg', location: '' )
-truck3 = Truck.create(name: 'Pho Wheels', account_name: 'truck3', password: 'pw', type: 'Vietnamese', description: '', pic: 'http://foodtruckfiesta.com/wp-content/uploads/2012/02/phowheels-truck.jpg', location: '' )
-truck4 = Truck.create(name: 'Peruvian Brothers', account_name: 'truck4', password: 'pw', type: 'Peruvian', description: '', pic: 'https://cdn.washingtoncitypaper.com/files/base/scomm/wcp/image/2013/12/960w/blogs_youngandhungry_files_2013_12_peruvianbrothers.jpg', location: '' )
-truck5 = Truck.create(name: 'Los Chamos', account_name: 'truck5', password: 'pw', type: 'Venezuelan', description: '', pic: 'http://burgerbeast.com/wp-content/uploads/2013/10/LosChamos_Header-612x291.jpg', location: '' )
-truck6 = Truck.create(name: 'La Roux', account_name: 'truck6', password: 'pw', type: 'Southern', description: '', pic: 'https://s3-media4.fl.yelpcdn.com/bphoto/SuPPBRrSSoSqZXWCrY-QEg/o.jpg', location: '' )
-truck7 = Truck.create(name: 'El Venezolano', account_name: 'truck7', password: 'pw', type: 'Venezuelan', description: '', pic: 'https://www.revistavenezolana.com/wp-content/uploads/2017/07/el-venezolano.jpg', location: '' )
-truck8 = Truck.create(name: 'Beef&Liberty', account_name: 'truck8', password: 'pw', type: 'Arabic', description: '', pic: 'http://www.discoverhongkong.com/common/images/dine-drink/what-to-eat/food-trucks/food-trucks_01.jpg', location: '' )
-truck9 = Truck.create(name: 'Makin Jamaican', account_name: 'truck9', password: 'pw', type: 'Jamaican', description: '', pic: 'http://makinjamaican.com/assets/IMG_0088.JPG', location: '' )
+truck0 = Truck.create(name: 'Little Italy', account_name: 'truck0', password: 'pw', food_type: 'Italian', description: '', pic: 'https://roaminghunger.com/img/trucks/original/500f37ff-f4dc-416a-acd2-352f46204482.jpeg', location: '' )
+truck1 = Truck.create(name: 'Mama Dees', account_name: 'truck1', password: 'pw', food_type: 'Italian', description: '', pic: 'https://roaminghunger.com/img/trucks/original/5547df6c-1454-43d8-98c1-6fa246204482.jpg', location: '' )
+truck2 = Truck.create(name: 'Barra Vieja', account_name: 'truck2', password: 'pw', food_type: 'Mexican', description: '', pic: 'http://www.garuyo.com/sites/default/files/styles/large/public/images/2015/06/los-food-trucks-mas-famosos-de-la-ciudad-de-mexico_135982.jpg_628113176.jpg', location: '' )
+truck3 = Truck.create(name: 'Pho Wheels', account_name: 'truck3', password: 'pw', food_type: 'Vietnamese', description: '', pic: 'http://foodtruckfiesta.com/wp-content/uploads/2012/02/phowheels-truck.jpg', location: '' )
+truck4 = Truck.create(name: 'Peruvian Brothers', account_name: 'truck4', password: 'pw', food_type: 'Peruvian', description: '', pic: 'https://cdn.washingtoncitypaper.com/files/base/scomm/wcp/image/2013/12/960w/blogs_youngandhungry_files_2013_12_peruvianbrothers.jpg', location: '' )
+truck5 = Truck.create(name: 'Los Chamos', account_name: 'truck5', password: 'pw', food_type: 'Venezuelan', description: '', pic: 'http://burgerbeast.com/wp-content/uploads/2013/10/LosChamos_Header-612x291.jpg', location: '' )
+truck6 = Truck.create(name: 'La Roux', account_name: 'truck6', password: 'pw', food_type: 'Southern', description: '', pic: 'https://s3-media4.fl.yelpcdn.com/bphoto/SuPPBRrSSoSqZXWCrY-QEg/o.jpg', location: '' )
+truck7 = Truck.create(name: 'El Venezolano', account_name: 'truck7', password: 'pw', food_type: 'Venezuelan', description: '', pic: 'https://www.revistavenezolana.com/wp-content/uploads/2017/07/el-venezolano.jpg', location: '' )
+truck8 = Truck.create(name: 'Beef&Liberty', account_name: 'truck8', password: 'pw', food_type: 'Arabic', description: '', pic: 'http://www.discoverhongkong.com/common/images/dine-drink/what-to-eat/food-trucks/food-trucks_01.jpg', location: '' )
+truck9 = Truck.create(name: 'Makin Jamaican', account_name: 'truck9', password: 'pw', food_type: 'Jamaican', description: '', pic: 'http://makinjamaican.com/assets/IMG_0088.JPG', location: '' )
 
 dish0 = Dish.create(name: 'Lasagna', price: 11, pic: '', truck_id: truck0.id)
 dish1 = Dish.create(name: 'Pesto Pasta', price: 10, pic: '', truck_id: truck0.id)
