@@ -4,7 +4,7 @@ class TrucksController < ApplicationController
   end
 
   def show
-    render json: Truck.find(params[:id])
+    render json: {account_name: current_user.account_name, name: current_user.name}
   end
 
   def create

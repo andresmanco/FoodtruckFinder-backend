@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 2018_09_06_182137) do
   create_table "trucks", force: :cascade do |t|
     t.string "name"
     t.string "account_name"
-    t.string "password"
+    t.string "password_digest"
     t.string "food_type"
     t.string "description"
     t.string "pic"
