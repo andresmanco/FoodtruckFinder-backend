@@ -7,4 +7,5 @@ Rails.application.routes.draw do
 
   post '/login', to: 'auth#login'
   get '/account', to: 'trucks#show'
+  get '/my-dishes', to: 'dishes#show'
 end

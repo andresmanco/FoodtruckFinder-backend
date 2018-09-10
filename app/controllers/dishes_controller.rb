@@ -2,11 +2,12 @@ class DishesController < ApplicationController
   skip_before_action :authenticate, only: [:index]
   def index
     render json: Dish.all
+
   end
 
-  # def show
-  #   render json: Dish.find(params[:id])
-  # end
+  def show
+    render json: my_current_user.dishes
+  end
 
   def create
     render json: Dish.create(dish_params)
