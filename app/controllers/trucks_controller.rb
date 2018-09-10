@@ -1,10 +1,12 @@
 class TrucksController < ApplicationController
+  skip_before_action :authenticate, only: [:index, :create]
   def index
+
     render json: Truck.all
   end
 
   def show
-    render json: {account_name: current_user.account_name, name: current_user.name}
+    render json: {account_name: my_current_user.account_name, name: my_current_user.name}
   end
 
   def create

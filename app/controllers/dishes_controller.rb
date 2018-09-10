@@ -1,4 +1,5 @@
 class DishesController < ApplicationController
+  skip_before_action :authenticate, only: [:index]
   def index
     render json: Dish.all
   end

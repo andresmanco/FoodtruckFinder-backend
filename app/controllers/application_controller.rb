@@ -8,9 +8,10 @@ class ApplicationController < ActionController::API
     @current_user = Truck.find(decoded_payload['user_id'])
   rescue JWT::VerificationError
     render json: { success: false }, status: 401
+
   end
 
-  def current_user
+  def my_current_user
     @current_user ||= authenticate
   end
 
