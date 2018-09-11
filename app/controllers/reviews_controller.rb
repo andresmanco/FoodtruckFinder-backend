@@ -12,7 +12,7 @@ class ReviewsController < ApplicationController
     render json: Review.create(review_params)
   end
 
-  # def updated
+  # def update
   #   Review.find(params[:id]).update(review_params)
   #   render json: Review.find(params[:id])
   # end

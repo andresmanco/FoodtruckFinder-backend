@@ -11,7 +11,7 @@ class UsersController < ApplicationController
   #   render json: User.create(user_params)
   # end
 #
-  # def updated
+  # def update
   #   User.find(params[:id]).update(user_params)
   #   render json: User.find(params[:id])
   # end
@@ -19,7 +19,7 @@ class UsersController < ApplicationController
   # def destroy
   #   render json: User.find(params[:id]).destroy
   # end
-# 
+#
   # private
   #
   # def user_params

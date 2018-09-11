@@ -13,9 +13,9 @@ class TrucksController < ApplicationController
     render json: Truck.create(truck_params)
   end
 
-  def updated
-    Truck.find(params[:id]).update(truck_params)
-    render json: Truck.find(params[:id])
+  def update
+    my_current_user.update(truck_params)
+    render json: my_current_user
   end
 
   def destroy
